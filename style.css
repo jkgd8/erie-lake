@@ -29,8 +29,11 @@ html {
   --cs-cyan: #436a62;
   --cs-gray-green: #5c895a;
   --cs-dark: #041a1e;
+  --cs-bg-blue: #8fbbc5;
 }
 body {
+  --header-height: 55px;
+
   height: 5000px;
 }
 
@@ -110,4 +113,32 @@ header nav a:first-child {
 }
 header nav a:last-child {
   /* margin: 5px 0 5px 20px; */
+}
+
+
+
+
+/* Hero */
+div.hero {
+  /* height: calc(100vh - var(--header-height)); */
+  height: 75vw;
+  /* min-height: 600px; */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--cs-bg-blue);
+
+  background-image: url('./assets/hero.png');
+  background-position: center top;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+div.hero h1 {
+  text-transform: uppercase;
+  color: var(--cs-light);
+  font-size: 8vw;
+
+  transform: translate(0, -8vw);
 }
