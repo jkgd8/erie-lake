@@ -1,7 +1,48 @@
+/* Fonts */
+@font-face {
+  font-family: 'Made Tommy Regular';
+  src: url('./assets/fonts/MADE TOMMY Regular_PERSONAL USE.otf');
+}
+@font-face {
+  font-family: 'FarnhamText-Semi Regular';
+  src: url('./assets/fonts/FarnhamText-Semi Regular.otf');
+}
+
+
+
 * {
   outline: none;
   padding: 0;
   margin: 0;
+  font-family: 'Made Tommy Regular';
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'FarnhamText-Semi Regular';
+}
+
+
+
+html {
+  --cs-light: #fff;
+  --cs-blue: #91bbbe;
+  --cs-cyan: #436a62;
+  --cs-gray-green: #5c895a;
+  --cs-dark: #041a1e;
+}
+body {
+  height: 5000px;
+}
+
+
+
+
+a {
+  text-decoration: none;
+  transition: .2s;
+}
+a:hover {
+  /* text-decoration: underline; */
 }
 
 
@@ -32,4 +73,41 @@ main div.container-fluid {
 /* Header */
 header {
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+
+  /* padding: 1em; */
+
+  background: var(--cs-dark);
+}
+header nav {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  padding: 0 1.5rem;
+
+
+}
+header nav a {
+  padding: 5px 20px;
+
+  color: var(--cs-light);
+  /* margin: 5px 20px; */
+  /* font-family: 'FarnhamText-Semi Regular'; */
+}
+header nav a:hover {
+  color: var(--cs-dark);
+  background-color: var(--cs-light);
+}
+header nav a:first-child {
+  /* margin: 5px 20px 5px 0; */
+}
+header nav a:last-child {
+  /* margin: 5px 0 5px 20px; */
 }
