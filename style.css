@@ -1,0 +1,35 @@
+* {
+  outline: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+
+
+/* Containers */
+main {
+  width: 100%;
+}
+
+main div.container {
+  --width: 1280px;
+
+  width: 100%;
+  max-width: var(--width);
+  margin: 0 auto;
+
+  background: red;
+}
+
+main div.container-fluid {
+  width: 100%;
+}
+
+
+
+
+/* Header */
+header {
+  width: 100%;
+}
