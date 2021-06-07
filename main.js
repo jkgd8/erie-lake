@@ -2,11 +2,6 @@
   /* Main Navigation */
   const navigationItems = [
     {
-      text: 'Top',
-      title: 'Go to Top',
-      href: '#top'
-    },
-    {
       text: 'Green Algae',
       title: 'Green Algae',
       href: '#green-algae'
@@ -14,42 +9,42 @@
     {
       text: 'SI',
       title: 'Severity Index',
-      href: '#green-algae'
+      href: '#severity-index'
     },
     {
       text: 'Rivers',
-      title: 'Pollutants',
-      href: '#green-algae'
+      title: 'Pollutants from rivers',
+      href: '#rivers'
     },
     {
       text: 'Categories',
-      title: 'Categories',
-      href: '#green-algae'
+      title: 'Categories of pollutants',
+      href: '#categories'
     },
     {
       text: 'Dead Zone',
       title: 'Dead Zone',
-      href: '#green-algae'
+      href: '#dead-zone'
     },
     {
       text: 'Health Effect',
       title: 'Health Effect',
-      href: '#green-algae'
+      href: '#health-effect'
     },
     {
       text: 'Ocean Friendly',
       title: 'Ocean Friendly',
-      href: '#green-algae'
+      href: '#ocean-friendly'
     },
     {
       text: 'Related Topics',
       title: 'Related Topics',
-      href: '#green-algae'
+      href: '#related-topics'
     },
     {
       text: 'Links',
       title: 'Links',
-      href: '#green-algae'
+      href: '#links'
     }
   ]
   renderNavigation(navigationItems)

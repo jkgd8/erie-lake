@@ -30,6 +30,9 @@ html {
   --cs-gray-green: #5c895a;
   --cs-dark: #041a1e;
   --cs-bg-blue: #8fbbc5;
+
+  background-color: var(--cs-dark);
+  color: var(--cs-light);
 }
 body {
   --header-height: 55px;
@@ -61,9 +64,7 @@ main div.container {
 
   width: 100%;
   max-width: var(--width);
-  margin: 0 auto;
-
-  background: red;
+  margin: 5rem auto 3rem auto;
 }
 
 main div.container-fluid {
@@ -141,4 +142,50 @@ div.hero h1 {
   font-size: 8vw;
 
   transform: translate(0, -8vw);
+}
+
+
+
+
+/* Text-block */
+div.text-block {
+   max-width: 600px;
+   margin: 0 auto;
+   padding: 0 1rem;
+}
+div.text-block h2 {
+   text-align: center;
+   margin: 0 0 2rem 0;
+
+}
+div.text-block p:not(:only-child) {
+   margin: 2rem 0;
+}
+div.text-block p:first-child:not(:only-child) {
+   margin: 0 0 2rem 0;
+}
+div.text-block p:last-child:not(:only-child) {
+   margin: 2rem 0 0 0;
+}
+
+
+
+
+/* image block */
+div.image-block {
+  background: var(--cs-light);
+  text-align: center;
+}
+div.image-block img {
+  width: calc(100% - 2rem);
+}
+
+
+
+
+/* col-2 */
+div.container.col-2,
+div.container-fluid.col-2 {
+  display: flex;
+  /* flex-wrap: wrap; */
 }
