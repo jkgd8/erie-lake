@@ -17,9 +17,6 @@
   font-family: 'Made Tommy Regular';
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'FarnhamText-Semi Regular';
-}
 
 
 
@@ -35,6 +32,20 @@ html {
   background-color: var(--cs-dark);
   color: var(--cs-light);
 }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'FarnhamText-Semi Regular';
+}
+
+h1.alt-color,
+h2.alt-color,
+h3.alt-color,
+h4.alt-color,
+h5.alt-color,
+h6.alt-color {
+  color: var(--cs-blue);
+}
+
 body {
   --header-height: 55px;
 
@@ -160,7 +171,6 @@ div.hero h1 {
 
 
 
-<<<<<<< HEAD
 /* Text-block */
 div.text-block {
    max-width: 600px;
@@ -173,13 +183,16 @@ div.text-block h2 {
 
 }
 div.text-block p:not(:only-child) {
-   margin: 2rem 0;
+   margin: 2rem auto;
 }
 div.text-block p:first-child:not(:only-child) {
-   margin: 0 0 2rem 0;
+   margin: 0 auto 2rem auto;
 }
 div.text-block p:last-child:not(:only-child) {
-   margin: 2rem 0 0 0;
+   margin: 2rem auto 0 auto;
+}
+div.text-block.narrow p {
+  max-width: 375px;
 }
 
 
@@ -202,7 +215,11 @@ div.container.col-2,
 div.container-fluid.col-2 {
   display: flex;
   /* flex-wrap: wrap; */
-=======
+}
+
+
+
+
 /* Responsive */
 @media only screen and (max-width: 1255px) {
   header nav.wide {
@@ -211,5 +228,4 @@ div.container-fluid.col-2 {
   header nav.menu-nav {
     display: block;
   }
->>>>>>> 15a5aad5532cecece2b8629df6090231aaef8b1e
 }
