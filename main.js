@@ -47,5 +47,8 @@
       href: '#links'
     }
   ]
-  renderNavigation(navigationItems)
+
+  /* Init */
+  App.renderNavigation(navigationItems)
+  App.renderTextBlocks()
 })()
