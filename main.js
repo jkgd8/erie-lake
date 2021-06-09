@@ -49,6 +49,7 @@
   ]
 
   /* Init */
+  App.listenerMainNavigationMenuButton()
   App.renderNavigation(navigationItems)
   App.renderTextBlocks()
 })()

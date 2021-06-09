@@ -16,6 +16,18 @@
     }
   },
 
+  listenerMainNavigationMenuButton () {
+    const btn = document.getElementById('_mainNavigationMenuButton')
+    const cls = 'active'
+    btn.addEventListener('click', function () {
+      if (this.classList.contains(cls)) {
+        this.classList.remove(cls)
+      } else {
+        this.classList.add(cls)
+      }
+    })
+  },
+
   /* Text Block */
   renderTextBlocks () {
     const items = document.getElementsByClassName('_text-block')

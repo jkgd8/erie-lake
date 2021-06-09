@@ -89,20 +89,21 @@ main div.container-fluid {
 /* Header */
 header {
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
   position: -webkit-sticky;
   position: fixed;
   top: 0;
-
-
   background-color: var(--cs-dark);
   background-color: var(--cs-dark-o);
 }
+header div.wrap {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 header img.logo {
-  padding: 0 0 0 1.5rem;
+  /* padding: 0 0 0 1.5rem; */
 }
 header nav.wide {
   display: flex;
@@ -140,6 +141,41 @@ header nav.menu-nav {
   height: 30px;
 }
 
+
+
+
+/* Menu Button */
+div.menu-btn {
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  /* background: red; */
+
+  display: none;
+  cursor: pointer;
+
+}
+div.menu-btn * {
+  height: 5px;
+  width: 100%;
+  margin: 6px 0;
+  background-color: var(--cs-light);
+  transition: .1s;
+}
+div.menu-btn.active *:nth-child(1) {
+  transform: rotate(45deg) translate(0, 16px);
+}
+div.menu-btn.active *:nth-child(2) {
+  opacity: 0;
+}
+div.menu-btn.active *:nth-child(3) {
+  transform: rotate(-45deg) translate(0px, -16px);
+}
 
 
 
@@ -226,6 +262,10 @@ div.container-fluid.col-2 {
     display: none;
   }
   header nav.menu-nav {
+    display: block;
+  }
+
+  div.menu-btn {
     display: block;
   }
 }
