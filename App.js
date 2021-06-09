@@ -32,15 +32,4 @@
     }
   }
 
-  // <!-- text-block -->
-  // <div id="#green-algae" class="container">
-  //
-  //   <!-- Block -->
-  //   <div class="text-block">
-  //     <h2>Green Algae Now Cover Lake Erie</h2>
-  //     <p>Such bright-colored blooms have increased in size and frequency since the 2000s, mostly because of heavy fertilizer use on nearby agricultural land. Rain causes the fertilizer to run off the land into rivers that empty into Lake.</p>
-  //     <p>The lake now experiences algae blooms every summer. Similar blooms are happening in lakes around the world as a result of warming temperatures and increased fertilizer use—a result of greater agricultural needs to feed a growing global population.</p>
-  //   </div>
-  //
-  // </div>
 }}))
