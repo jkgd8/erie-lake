@@ -99,10 +99,6 @@ header img.logo {
 }
 header nav.wide {
 
-
-  /* padding: 1em; */
-
-  background: var(--cs-dark);
 }
 header nav {
 
@@ -116,7 +112,6 @@ header nav {
 }
 header nav a {
   padding: 5px 20px;
-
   color: var(--cs-light);
   /* margin: 5px 20px; */
   /* font-family: 'FarnhamText-Semi Regular'; */
