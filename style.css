@@ -30,14 +30,16 @@ html {
   --cs-gray-green: #5c895a;
   --cs-dark: #041a1e;
   --cs-bg-blue: #8fbbc5;
+  --cs-dark-o: #041a1e55;
 
   background-color: var(--cs-dark);
   color: var(--cs-light);
+  scroll-behavior: smooth;
 }
 body {
   --header-height: 55px;
 
-  height: 5000px;
+  /* height: 5000px; */
 }
 
 
@@ -80,7 +82,7 @@ header {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-<<<<<<< HEAD
+
   background-color: var(--cs-dark);
   background-color: var(--cs-dark-o);
 }
@@ -95,14 +97,14 @@ header img.logo {
   /* padding: 0 0 0 1.5rem; */
 }
 header nav.wide {
-=======
+
 
   /* padding: 1em; */
 
   background: var(--cs-dark);
 }
 header nav {
->>>>>>> 1acd9247ac5b706d419d9bd6c77dc47d2eb4f658
+
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -142,11 +144,8 @@ div.menu-btn {
   align-items: center;
   justify-content: center;
 
-  /* background: red; */
-
   display: none;
   cursor: pointer;
-
 }
 div.menu-btn * {
   height: 5px;
@@ -164,6 +163,48 @@ div.menu-btn.active *:nth-child(2) {
 div.menu-btn.active *:nth-child(3) {
   transform: rotate(-45deg) translate(0px, -16px);
 }
+
+
+
+
+/* Mobile Menu */
+menu.mobile-menu {
+  position: fixed;
+  min-height: 100vh;
+  background-color: var(--cs-dark);
+  max-width: 400px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transition: .2s;
+  left: -100%;
+  display: none;
+}
+menu.mobile-menu.active {
+  left: 0;
+}
+menu.mobile-menu div {
+  position: relative;
+}
+menu.mobile-menu ul {
+  padding: 0 2rem;
+  height: 100vh;
+  overflow-y: auto;
+  list-style: none;
+  font-size: 1.5rem;
+}
+menu.mobile-menu ul li {
+  padding: .5rem;
+}
+menu.mobile-menu a {
+  color: var(--cs-light);
+}
+/* Mobile Menu */
+menu.mobile-menu img.logo {
+  padding: 1rem;
+}
+
 
 
 
@@ -237,7 +278,6 @@ div.container-fluid.col-2 {
   display: flex;
   /* flex-wrap: wrap; */
 }
-<<<<<<< HEAD
 
 
 
@@ -247,13 +287,9 @@ div.container-fluid.col-2 {
   header nav.wide {
     display: none;
   }
-  header nav.menu-nav {
-    display: block;
-  }
 
+  menu.mobile-menu,
   div.menu-btn {
     display: block;
   }
 }
-=======
->>>>>>> 1acd9247ac5b706d419d9bd6c77dc47d2eb4f658

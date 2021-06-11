@@ -51,5 +51,7 @@
   /* Init */
   App.listenerMainNavigationMenuButton()
   App.renderNavigation(navigationItems)
+  App.renderNavigationMenu(navigationItems)
   App.renderTextBlocks()
+  App.closeMenuOnHash()
 })()
