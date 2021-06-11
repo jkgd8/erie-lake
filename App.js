@@ -47,20 +47,6 @@
       ul.appendChild(li)
     }
     container.appendChild(ul)
-
-    const top = document.createElement('a')
-    top.setAttribute('href', '#top')
-    const logo = document.createElement('img')
-    logo.setAttribute('alt', 'Erie Lake')
-    logo.setAttribute('title', 'Erie Lake')
-    logo.setAttribute('src', './assets/logo.png')
-    logo.setAttribute('width', '100px')
-    logo.setAttribute('height', '50px')
-    logo.classList.add('logo')
-
-    top.appendChild(logo)
-
-    menu.appendChild(top)
     menu.appendChild(container)
   },
 
