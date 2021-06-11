@@ -35,6 +35,9 @@ html {
   background-color: var(--cs-dark);
   color: var(--cs-light);
   scroll-behavior: smooth;
+
+  /* temp background */
+  background: red;
 }
 body {
   --header-height: 55px;
@@ -264,7 +267,6 @@ div.text-block.narrow {
 
 /* image block */
 div.image-block {
-  background: var(--cs-light);
   text-align: center;
 }
 div.image-block img {
