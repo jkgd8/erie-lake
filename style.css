@@ -32,12 +32,15 @@ html {
   --cs-bg-blue: #8fbbc5;
   --cs-dark-o: #041a1e55;
 
-  background-color: var(--cs-dark);
+  background: rgb(2,33,39);
+  background: linear-gradient(0deg,
+    rgba(2,33,39,1) 0%,
+    rgba(76,96,68,1) 25%,
+    rgba(170,176,60,1) 50%,
+    rgba(161,198,202,1) 75%);
   color: var(--cs-light);
   scroll-behavior: smooth;
 
-  /* temp background */
-  background: red;
 }
 body {
   --header-height: 55px;
@@ -70,6 +73,9 @@ main div.container {
   width: 100%;
   max-width: var(--width);
   margin: 5rem auto 3rem auto;
+}
+main div.container.mt-2 {
+  margin: 2rem auto 3rem auto;
 }
 
 main div.container-fluid {
@@ -209,15 +215,12 @@ menu.mobile-menu a {
 
 /* Hero */
 div.hero {
-  /* height: calc(100vh - var(--header-height)); */
+  transform: translate(0, calc(var(--header-height) * -1));
   height: 75vw;
-  /* min-height: 600px; */
 
   display: flex;
   justify-content: center;
   align-items: center;
-
-  background-color: var(--cs-bg-blue);
 
   background-image: url('./assets/hero.png');
   background-position: center top;
@@ -244,7 +247,10 @@ div.text-block {
 div.text-block h2 {
    text-align: center;
    margin: 0 0 2rem 0;
-
+   font-size: 1.75rem;
+}
+div.text-block.nomargin h2 {
+  margin: 0;
 }
 div.text-block p:not(:only-child) {
    margin: 2rem 0;
@@ -286,6 +292,20 @@ div.container-fluid.col-2 {
 
 
 
+/* Utility */
+.w-30 {
+  width: 30%;
+}
+.two-col-text {
+  max-width: 580px !important;
+  width: 100%;
+}
+.two-col-text p {
+  padding: 0;
+}
+
+
+
 /* Responsive */
 @media only screen and (max-width: 1255px) {
   header nav.wide {
@@ -297,12 +317,18 @@ div.container-fluid.col-2 {
     display: block;
   }
 }
-@media only screen and (max-width: 680px) {
+@media only screen and (max-width: 1000px) {
   div.image-block {
     width: 100%;
     margin: 1.5rem 0;
   }
   div.container.col-2 {
     flex-direction: column;
+  }
+  .w-30 {
+    width: 100%;
+  }
+  .two-col-text p {
+    margin: .5rem 0;
   }
 }

@@ -55,10 +55,11 @@
     const items = document.getElementsByClassName('_text-block')
     for (item of items) {
       const narrow = item.getAttribute('narrow') ? ` narrow` : ''
+      const nomargin = item.getAttribute('nomargin') ? ' nomargin' : ''
       const header = item.getAttribute('header') ? `<h2${item.getAttribute('altColor') ? ' class="alt-color"' : ''}>${item.getAttribute('header')}</h2>` : ''
-      const pars = JSON.parse(item.getAttribute('pars')).map(item => { return `<p>${item}</p>` }).join('')
+      const pars = item.getAttribute('pars') ? JSON.parse(item.getAttribute('pars')).map(item => { return `<p>${item}</p>` }).join('') : ''
       item.innerHTML = `
-        <div class="text-block${narrow}">
+        <div class="text-block${narrow}${nomargin}">
           ${header}
           ${pars}
         </div>
