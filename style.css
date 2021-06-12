@@ -268,7 +268,7 @@ div.text-block.narrow {
 /* image block */
 div.image-block {
   text-align: center;
-  width: 80%;
+  width: 100%;
 }
 div.image-block img {
   /* width: calc(100% - 2rem); */
