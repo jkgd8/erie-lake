@@ -33,7 +33,7 @@ html {
   --cs-dark-o: #041a1e55;
 
   background: rgb(2,33,39);
-  background: linear-gradient(0deg,
+  background-image: url('./assets/algae.svg'), linear-gradient(0deg,
     rgba(2,33,39,1) 0%,
     rgba(76,96,68,1) 25%,
     rgba(170,176,60,1) 50%,
@@ -41,6 +41,9 @@ html {
   color: var(--cs-light);
   scroll-behavior: smooth;
 
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100%;
 }
 body {
   --header-height: 55px;
@@ -457,6 +460,7 @@ div.card div.text-body {
 footer {
   text-align: center;
   padding: 1rem;
+  margin: 10rem 0 0 0;
 }
 
 
