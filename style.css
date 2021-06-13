@@ -306,6 +306,14 @@ div.container-fluid.col-2 {
 
 
 
+
+/* link list */
+a {
+  color: #FFFFFF;
+}
+
+
+
 /* Responsive */
 @media only screen and (max-width: 1255px) {
   header nav.wide {
