@@ -34,10 +34,10 @@ html {
 
   background: rgb(2,33,39);
   background-image: url('./assets/algae.svg'), linear-gradient(0deg,
-    rgba(2,33,39,1) 0%,
-    rgba(76,96,68,1) 25%,
-    rgba(170,176,60,1) 50%,
-    rgba(161,198,202,1) 75%);
+    rgba(2,33,39,1) 20%,
+    rgba(76,96,68,1) 50%,
+    rgba(170,176,60,1) 80%,
+    rgba(161,198,202,1) 90%);
   color: var(--cs-light);
   scroll-behavior: smooth;
 
