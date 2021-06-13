@@ -54,6 +54,7 @@ body {
 a {
   text-decoration: none;
   transition: .2s;
+  color: var(--cs-light);
 }
 a:hover {
   /* text-decoration: underline; */
@@ -312,6 +313,15 @@ div.container.col-2,
 div.container-fluid.col-2 {
   display: flex;
 }
+div.container.col-2.cards {
+  justify-content: space-around;
+}
+div.container.col-2.cards div.card div.text-body {
+  text-align: left;
+}
+div.container.col-2.cards div.card {
+  width: 50%;
+}
 
 
 
@@ -359,14 +369,6 @@ div.container.col-3.cards a:hover img {
 
 
 
-/* link list */
-a {
-  color: #FFFFFF;
-}
-
-
-
-
 /* Card */
 div.card {
   padding: 1rem;
@@ -378,6 +380,38 @@ div.card img {
 div.card div.text-body {
   padding: 1rem;
   text-align: center;
+}
+
+
+
+
+/* Map Legend */
+.map-legend {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 2rem;
+  transform: translate(0, -5vw);
+}
+.map-legend img.legend-icon {
+  width: 2rem;
+  height: 2rem;
+  object-fit: cover;
+  vertical-align: middle;
+}
+
+
+
+
+/* Links */
+.links {
+  list-style: none;
+  text-align: center;
+}
+.links a:hover {
+  text-decoration: underline;
+}
+.links li {
+  margin: 1rem;
 }
 
 
@@ -447,8 +481,26 @@ footer {
     justify-content: space-around;
   }
 
-  /* Cards */
+  /* Cards col 2*/
   div.container.col-3.cards a {
     width: 100%;
+  }
+
+  /* Map Legend */
+  .map-legend {
+    max-width: 400px;
+    width: calc(100% - 2rem);
+    margin: 0 auto;
+    display: block;
+    padding: 0;
+    transition: none;
+  }
+
+  /* Cards col 3 */
+  div.container.col-2.cards {
+    justify-content: column;
+  }
+  div.container.col-2.cards div.card {
+    width: calc(100% - 2rem);
   }
 }
