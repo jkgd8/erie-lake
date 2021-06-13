@@ -287,13 +287,13 @@ div.image-block img {
 /* Seaweed Block */
 div.seaweed-block {
   max-width: 100px;
+  font-size: .8rem;
 
   display: flex;
   flex-direction: column;
   background-color: var(--cs-alt-green);
   justify-content: center;
   align-items: center;
-  padding: 2rem 0;
   border-radius: 100px;
 }
 div.seaweed-block div.item {
@@ -329,7 +329,8 @@ div.container.col-2.cards div.card {
 /* col-3 */
 div.container.col-3 {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  width: calc(100% - 2rem);
 }
 div.container.col-3 div.col-item:nth-child(1) {
   width: 35%;
@@ -352,6 +353,41 @@ div.container.col-3.cards img {
 div.container.col-3.cards a:hover img {
   transform: scale(1.05);
 }
+
+
+
+
+/* col-6 */
+div.container.col-6 {
+  display: flex;
+  justify-content: space-between;
+  width: calc(100% - 2rem);
+}
+div.container.col-6 div.item img {
+  display: block;
+  max-width: 168px;
+  margin: 0 auto 1rem auto;
+}
+div.container.col-6 div.item div.header .sub {
+  color: var(--cs-blue);
+}
+div.container.col-6 div.item ul {
+  list-style: none;
+  line-height: 200%;
+  margin: 1rem 0 0 0;
+}
+div.container.col-6 div.item {
+  width: 100%;
+  padding: 0 1rem;
+  border-right: 2px solid var(--cs-alt-green);
+}
+div.container.col-6 div.item:first-child {
+  border-left: none;
+}
+div.container.col-6 div.item:last-child {
+  border-right: none;
+}
+
 
 
 /* Utility */
@@ -499,8 +535,28 @@ footer {
   /* Cards col 3 */
   div.container.col-2.cards {
     justify-content: column;
+    max-width: 450px;
   }
   div.container.col-2.cards div.card {
     width: calc(100% - 2rem);
+  }
+
+  /* Col 6 */
+  div.container.col-6 {
+    flex-direction: column;
+  }
+  div.container.col-6 div.item img {
+    width: 100%;
+  }
+  div.container.col-6 div.item {
+    width: 300px;
+    border-left: none;
+    border-right: none;
+    margin: 0 auto;
+    border-top: 2px solid var(--cs-alt-green);
+    padding: 3rem 0;
+  }
+  div.container.col-6 div.item {
+    border-bottom: 2px solid var(--cs-alt-green);
   }
 }
