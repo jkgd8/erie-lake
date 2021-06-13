@@ -355,6 +355,18 @@ a {
 
 
 
+/* Card */
+div.card {
+  margin: 1rem 0;
+  max-width: 300px;
+}
+div.card div.text-body {
+  padding: 1rem;
+}
+
+
+
+
 /* Footer */
 footer {
   text-align: center;
