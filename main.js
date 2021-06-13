@@ -53,6 +53,7 @@
   App.renderNavigation(navigationItems)
   App.renderNavigationMenu(navigationItems)
   App.renderTextBlocks()
+  App.renderSeaweedBlocks()
   App.footerYear()
   App.closeMenuOnHash()
 })()

@@ -82,6 +82,22 @@
     }
   },
 
+  /* Seaweed Block */
+  renderSeaweedBlocks () {
+    const blocks = document.getElementsByClassName('_seaweed-block')
+    for (block of blocks) {
+      const items = block.getAttribute('items') ? JSON.parse(block.getAttribute('items')) : ''
+      for (item of items) {
+        block.innerHTML = block.innerHTML + `
+          <div class="item">
+            <img src="${item.src}" alt="${item.alt}">
+            <span>${item.text}</span>
+          </div>
+        `
+      }
+    }
+  },
+
   /* Footer */
   footerYear () {
     const footer = document.getElementById('_footer')

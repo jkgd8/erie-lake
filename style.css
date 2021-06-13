@@ -271,13 +271,37 @@ div.text-block.narrow {
 
 
 
-/* image block */
+/* Image block */
 div.image-block {
   text-align: center;
   width: 100%;
 }
 div.image-block img {
   /* width: calc(100% - 2rem); */
+}
+
+
+
+
+/* Seaweed Block */
+div.seaweed-block {
+  max-width: 100px;
+
+  display: flex;
+  flex-direction: column;
+  background-color: var(--cs-blue);
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+  border-radius: 100px;
+}
+div.seaweed-block div.item {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0;
+}
+div.seaweed-block img {
+  max-width: 100%;
 }
 
 
@@ -290,6 +314,22 @@ div.container-fluid.col-2 {
 }
 
 
+
+
+/* col-3 */
+div.container.col-3 {
+  display: flex;
+  justify-content: center;
+}
+div.container.col-3 div.col-item:nth-child(1) {
+  width: 35%;
+}
+div.container.col-3 div.col-item:nth-child(2) {
+  width: 25%;
+}
+div.container.col-3 div.col-item:nth-child(3) {
+  width: 15%;
+}
 
 
 /* Utility */
@@ -347,5 +387,20 @@ footer {
   }
   .two-col-text p {
     margin: .5rem 0;
+  }
+
+  /* Col 3 */
+  div.container.col-3 {
+    display: flex;
+    max-width: 450px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  div.container.col-3 div.col-item:nth-child(1),
+  div.container.col-3 div.col-item:nth-child(2),
+  div.container.col-3 div.col-item:nth-child(3) {
+    width: 100%;
+    margin: 1rem 0;
   }
 }
