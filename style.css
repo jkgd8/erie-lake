@@ -26,8 +26,8 @@ h1, h2, h3, h4, h5, h6 {
 html {
   --cs-light: #fff;
   --cs-blue: #91bbbe;
-  --cs-cyan: #436a62;
   --cs-gray-green: #5c895a;
+  --cs-alt-green: #436a62;
   --cs-dark: #041a1e;
   --cs-bg-blue: #8fbbc5;
   --cs-dark-o: #041a1e55;
@@ -289,7 +289,7 @@ div.seaweed-block {
 
   display: flex;
   flex-direction: column;
-  background-color: var(--cs-blue);
+  background-color: var(--cs-alt-green);
   justify-content: center;
   align-items: center;
   padding: 2rem 0;
@@ -330,6 +330,18 @@ div.container.col-3 div.col-item:nth-child(2) {
 div.container.col-3 div.col-item:nth-child(3) {
   width: 15%;
 }
+div.container.col-3.cards {
+  justify-content: space-around;
+}
+div.container.col-3.cards a {
+  width: 33.33333%;
+}
+div.container.col-3.cards img {
+  transition: .2s;
+}
+div.container.col-3.cards a:hover img {
+  transform: scale(1.05);
+}
 
 
 /* Utility */
@@ -357,11 +369,15 @@ a {
 
 /* Card */
 div.card {
-  margin: 1rem 0;
-  max-width: 300px;
+  padding: 1rem;
+}
+div.card img {
+  width: 100%;
+  border-radius: 5px;
 }
 div.card div.text-body {
   padding: 1rem;
+  text-align: center;
 }
 
 
@@ -403,16 +419,36 @@ footer {
 
   /* Col 3 */
   div.container.col-3 {
+    width: 100%;
     display: flex;
     max-width: 450px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
   }
   div.container.col-3 div.col-item:nth-child(1),
   div.container.col-3 div.col-item:nth-child(2),
   div.container.col-3 div.col-item:nth-child(3) {
-    width: 100%;
+    width: calc(100% - 2rem * 2);
     margin: 1rem 0;
+    /* padding: 0 1rem; */
+  }
+
+  div.container.col-3 div.text-block {
+    padding: 0;
+  }
+
+  /* Seaweed */
+  div.seaweed-block {
+    max-width: calc(450px - 2rem * 2);
+    flex-direction: row;
+    padding: 0;
+    justify-content: space-around;
+  }
+
+  /* Cards */
+  div.container.col-3.cards a {
+    width: 100%;
   }
 }
