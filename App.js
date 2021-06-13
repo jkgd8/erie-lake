@@ -80,6 +80,13 @@
         })
       }
     }
+  },
+
+  /* Footer */
+  footerYear () {
+    const footer = document.getElementById('_footer')
+    const d = new Date()
+    footer.innerHTML = `&copy; ${d.getFullYear()} ${footer.innerHTML}`
   }
 
 }}))

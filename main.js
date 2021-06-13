@@ -53,5 +53,6 @@
   App.renderNavigation(navigationItems)
   App.renderNavigationMenu(navigationItems)
   App.renderTextBlocks()
+  App.footerYear()
   App.closeMenuOnHash()
 })()
